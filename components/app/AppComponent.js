@@ -5,7 +5,7 @@ import {
   View,
 } from 'react-native';
 
-import appTheme from '../../theme';
+import appTheme from '../../theme/theme';
 
 /**
  * App component class
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: 'center',
-    color: appTheme.instructions,
+    color: appTheme.instructionsText,
     marginBottom: 5,
   },
 });

@@ -4,15 +4,15 @@
  */
 const appTheme = {
   // Material design colors
-  primaryColor: '',
-  primaryDarkColor: '',
-  accentColor: '',
+  primary: '',
+  primaryDark: '',
+  accent: '',
 
   // AppComponent.js container background
   containerBackground: '#F5FCFF',
 
   // Text colors
-  instructions: '#333333',
+  instructionsText: '#333333',
 };
 
 export default appTheme;
