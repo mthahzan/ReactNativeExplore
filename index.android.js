@@ -1,53 +1,30 @@
+import React, {Component} from 'react';
+import {AppRegistry} from 'react-native';
+
+import AppComponent from './components/app/AppComponent';
+
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Class for Android build
  */
-
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-
 export default class HelloWorld01 extends Component {
+
+  /**
+   * Says whether the component should update
+   * @return {Boolean} TRUE if the component should be updated
+   */
+  shouldComponentUpdate() {
+    return true;
+  }
+
+  /**
+   * Renders the view
+   * @return {JSX} The view to be rendered
+   */
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native! lol
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <AppComponent />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('HelloWorld01', () => HelloWorld01);

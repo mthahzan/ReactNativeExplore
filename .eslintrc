@@ -1,0 +1,29 @@
+{
+  "extends": ["eslint:recommended", "plugin:react-native/all", "plugin:react/all", "google"],
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "env": {
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "max-len": [2, 100],
+    "no-undef": 2,
+
+    "react/forbid-component-props": 0,
+    "react/jsx-indent": [2, 2],
+    "react/jsx-no-literals": 0,
+    "react/jsx-filename-extension": 0
+  }
+}
